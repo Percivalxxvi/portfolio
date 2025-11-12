@@ -1,6 +1,6 @@
 "use client"
 import React from "react";
-import BlogCard from "@/components/BlogCard";
+import BlogCard from "@/components/Blogcard";
 import { blogs } from "@/data/blogs";
 import Navpc from "@/components/Navpc";
 
