@@ -200,10 +200,10 @@ const Appage = () => {
       {/* Contact */}
       <section
         id="contact"
-        className="bg-gradient-to-b from-[#1e293b] via-[#111827] to-black text-white py-20 px-6"
+        className="bg-linear-to-b from-[#1e293b] via-[#111827] to-black text-white py-20 px-6"
       >
         <div className="max-w-3xl mx-auto text-center">
-          <h3 className="text-4xl font-extrabold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-green-400">
+          <h3 className="text-4xl font-extrabold mb-4 text-transparent bg-clip-text bg-linear-to-r from-purple-400 to-green-400">
             Get in Touch
           </h3>
 
