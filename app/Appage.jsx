@@ -99,7 +99,7 @@ const Appage = () => {
       <div className="h-10 lg:hidden flex"></div>
 
       {/* Hero */}
-      <div className="relative flex flex-col lg:flex-row-reverse items-center justify-between lg:justify-evenly w-full min-h-[90vh] overflow-hidden bg-gradient-to-t from-black via-gray-950 to-gray-900 px-6 py-12">
+      <div className="relative flex flex-col lg:flex-row-reverse items-center justify-between lg:justify-evenly w-full min-h-[90vh] overflow-hidden bg-linear-to-t from-black via-gray-950 to-gray-900 px-6 py-12">
         {/* Deep glow background */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(88,28,135,0.25),transparent_80%)]" />
 
