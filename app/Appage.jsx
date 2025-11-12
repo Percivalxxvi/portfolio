@@ -99,49 +99,126 @@ const Appage = () => {
       <div className="h-10 lg:hidden flex"></div>
 
       {/* Hero */}
-      <div className="h-fit lg:h-100 lg:w-full w-full flex flex-col lg:flex-row-reverse lg:justify-evenly items-center justify-center bg-blue-500 bg-linear-to-t from-gray-800 to-purple-500">
-        <div className="flex flex-col lg:items-center lg:justify-center lg:h-100 p-5 rounded-lg w-fit">
-          <h1 className="lg:text-5xl text-3xl font-bold text-white lg:text-left text-center lg:w-150 w-100">
-            Welcome to GreyLine Solutions
-          </h1>
-        </div>
-        {/* <h1 className='text-2xl font-bold text-white'>Freelance Developer</h1> */}
-        <div className="lg:w-100 lg:h-100 w-[75%] h-70 duration-500 flex lg:flex hover:shadow-6xl cursor-pointer lg:hover:ml-5 items-center justify-center">
+      <div className="relative flex flex-col lg:flex-row-reverse items-center justify-between lg:justify-evenly w-full min-h-[90vh] overflow-hidden bg-gradient-to-t from-black via-gray-950 to-gray-900 px-6 py-12">
+        {/* Deep glow background */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(88,28,135,0.25),transparent_80%)]" />
+
+        {/* Image Section */}
+        <div className="relative z-10 flex justify-center items-center lg:w-[45%] w-full h-[350px] lg:h-[500px] transition-transform duration-700 hover:scale-[1.03]">
           <img
-            className="lg:w-lg lg:h-[98%] w-4/4 h-4/4 lg:hover:scale-102 duration-500 object-cover rounded-3xl"
             src="https://ik.imagekit.io/percival26/edited%20photo2.1.2.PNG?updatedAt=1762963287116"
-            alt=""
+            alt="GreyLine Solutions"
+            className="w-full h-full object-cover rounded-3xl shadow-lg shadow-indigo-800/40"
           />
         </div>
+
+        {/* Text Section */}
+        <div className="relative z-10 flex flex-col text-center lg:text-left lg:w-[45%] mt-10 lg:mt-0 space-y-6">
+          <h1 className="text-4xl lg:text-6xl font-extrabold text-transparent bg-clip-text bg-linear-to-r from-indigo-400 to-purple-500 drop-shadow-[0_0_15px_rgba(139,92,246,0.4)]">
+            Welcome to <br /> GreyLine Solutions
+          </h1>
+
+          <p className="text-lg text-gray-400 leading-relaxed max-w-md mx-auto lg:mx-0">
+            Empowering brands through technology, design, and digital
+            craftsmanship. We build solutions that redefine excellence.
+          </p>
+
+          <a
+            href="#contact"
+            className="inline-block mt-4 w-fit mx-auto lg:mx-0 px-6 py-3 text-lg font-semibold text-white bg-linear-to-r from-indigo-700 to-purple-800 rounded-xl shadow-md hover:shadow-indigo-600/40 hover:scale-105 transition-all duration-300 border border-gray-700"
+          >
+            Get in Touch
+          </a>
+        </div>
+
+        {/* Dark floating glow accents */}
+        <div className="absolute top-10 left-10 w-32 h-32 bg-purple-900/20 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-10 right-10 w-48 h-48 bg-indigo-900/20 rounded-full blur-3xl animate-pulse delay-200" />
       </div>
 
       {/* Intro */}
-      <section className="text-center py-20 flex h-65 flex-col justify-center items-center bg-gray-900">
-        <h2 className="text-3xl lg:text-4xl font-extrabold mb-4 w-80 lg:w-150 text-center">
-          Hello, I'm Joshua Oladeji 👋
-        </h2>
-        <p className="text-xl text-gray-400 mb-1">Front-end Developer</p>
-        <p className="text-xl text-gray-400 mb-4">Open Source Enthusiast</p>
-        <a
-          href="#projects"
-          className="inline-block bg-purple-500 text-black px-6 py-3 border rounded hover:bg-linear-to-r from-gray-900 to-purple-600 transition hover:text-white active:bg-black active:text-white hover:border hover:border-gray-400"
-        >
-          View My Work
-        </a>
+      <section className="relative flex flex-col items-center justify-center text-center py-24 bg-linear-to-b from-black via-gray-950 to-gray-900 overflow-hidden">
+        {/* Deep Glow Effect */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(79,70,229,0.15),transparent_70%)]" />
+
+        {/* Text Content */}
+        <div className="relative z-10 flex flex-col items-center">
+          <h2 className="text-4xl lg:text-6xl font-extrabold mb-4 w-full max-w-2xl leading-tight bg-clip-text text-transparent bg-linear-to-r from-indigo-400 to-purple-500 drop-shadow-[0_0_25px_rgba(99,102,241,0.4)]">
+            Hello, I'm Joshua Oladeji 👋
+          </h2>
+
+          <p className="text-lg lg:text-xl text-gray-400 mb-1 tracking-wide">
+            Front-End Developer
+          </p>
+          <p className="text-lg lg:text-xl text-gray-400 mb-6 tracking-wide">
+            Open Source Enthusiast
+          </p>
+
+          <a
+            href="#projects"
+            className="relative inline-block px-8 py-3 text-lg font-semibold text-white bg-linear-to-r from-indigo-700 to-purple-800 rounded-xl shadow-md border border-gray-700 hover:shadow-indigo-600/40 hover:scale-105 transform transition-all duration-300"
+          >
+            View My Work
+          </a>
+        </div>
+
+        {/* Floating soft accents */}
+        <div className="absolute top-10 left-10 w-24 h-24 bg-purple-900/20 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-10 right-10 w-32 h-32 bg-indigo-900/20 rounded-full blur-3xl animate-pulse delay-200" />
       </section>
+
       {/* About */}
       <section
         id="about"
-        className="flex flex-col max-w-8xl px-6 py-16 lg:h-40 h-55 justify-center items-center"
+        className="relative flex flex-col items-center justify-center text-center lg:text-left mx-auto px-6 py-24 bg-linear-to-b from-gray-950 via-gray-900 to-gray-950 overflow-hidden shadow-lg"
       >
-        <h3 className="text-3xl font-bold mb-2 lg:w-5xl text-left w-[95%]">
-          About Me
-        </h3>
-        <p className="text-gray-100 text-lg lg:w-5xl w-[95%] italic">
-          I'm a front-end developer with experience building scalable web apps.
-          I enjoy clean code and creative problem-solving.
-        </p>
+        {/* Decorative glow */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(79,70,229,0.15),transparent_70%)]" />
+
+        {/* Text content */}
+        <div className="relative z-10 w-full lg:w-4/5 space-y-6">
+          <h3 className="text-4xl font-extrabold mb-4 text-transparent bg-clip-text bg-linear-to-r from-purple-400 to-green-400">
+            About Me
+          </h3>
+          <p className="text-gray-300 text-lg leading-relaxed max-w-3xl italic">
+            I'm a passionate{" "}
+            <span className="text-indigo-400 font-medium">
+              Front-End Developer
+            </span>{" "}
+            who loves building clean, responsive, and scalable web applications.
+            I focus on creating smooth user experiences through elegant code and
+            thoughtful design.
+          </p>
+        </div>
+
+        {/* Subtle floating shapes for depth */}
+        <div className="absolute top-10 right-10 w-40 h-40 bg-purple-800/10 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-10 left-10 w-32 h-32 bg-indigo-800/10 rounded-full blur-3xl animate-pulse delay-200" />
       </section>
+
+      {/* Skills */}
+      <section id="skills" className="max-w-4xl mx-auto px-4 lg:py-16 py-10">
+        <h3 className="text-3xl font-bold mb-6">Skills</h3>
+        <div className="flex flex-wrap gap-4 text-gray-200">
+          {[
+            "JavaScript",
+            "React",
+            "Next JS",
+            "Tailwind CSS",
+            "MongoDB",
+            "Github",
+            "Python",
+          ].map((skill) => (
+            <span
+              key={skill}
+              className="bg-gray-700 px-3 py-2 rounded border-2 border-gray-500"
+            >
+              {skill}
+            </span>
+          ))}
+        </div>
+      </section>
+
       {/* Projects */}
       <section id="projects" className="bg-gray-900 py-10">
         <div className="max-w-6xl mx-auto px-6">
@@ -175,28 +252,7 @@ const Appage = () => {
           </div>
         </div>
       </section>
-      {/* Skills */}
-      <section id="skills" className="max-w-4xl mx-auto px-4 lg:py-16 py-10">
-        <h3 className="text-3xl font-bold mb-6">Skills</h3>
-        <div className="flex flex-wrap gap-4 text-gray-200">
-          {[
-            "JavaScript",
-            "React",
-            "Next JS",
-            "Tailwind CSS",
-            "MongoDB",
-            "Github",
-            "Python",
-          ].map((skill) => (
-            <span
-              key={skill}
-              className="bg-gray-700 px-3 py-2 rounded border-2 border-gray-500"
-            >
-              {skill}
-            </span>
-          ))}
-        </div>
-      </section>
+
       {/* Contact */}
       <section
         id="contact"
