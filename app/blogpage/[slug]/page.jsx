@@ -26,7 +26,7 @@ const Page = async ({ params }) => {
   }
 
   return (
-    <section className="relative min-h-screen bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 text-gray-100 overflow-hidden">
+    <section className="relative min-h-screen bg-linear-to-b from-gray-950 via-gray-900 to-gray-950 text-gray-100 overflow-hidden">
       {/* Glow Effects */}
       <div className="absolute top-20 left-20 w-72 h-72 bg-purple-600/10 rounded-full blur-3xl animate-pulse" />
       <div className="absolute bottom-16 right-16 w-72 h-72 bg-pink-600/10 rounded-full blur-3xl animate-pulse delay-200" />
@@ -52,9 +52,9 @@ const Page = async ({ params }) => {
           alt={blog.title}
           className="w-full h-full object-cover scale-105 hover:scale-110 transition-transform duration-700"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-900/70 to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-t from-gray-950 via-gray-900/70 to-transparent" />
         <div className="absolute bottom-12 left-1/2 -translate-x-1/2 text-center">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-indigo-400">
+          <h1 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-pink-500 to-indigo-400">
             {blog.title}
           </h1>
         </div>

@@ -17,7 +17,7 @@ const BlogPage = () => {
 
       {/* Header */}
       <div className="relative z-10 flex flex-col items-center justify-center py-16 text-center">
-        <h1 className="text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-indigo-400 mb-4">
+        <h1 className="text-5xl font-extrabold bg-clip-text text-transparent bg-linear-to-r from-purple-400 via-pink-500 to-indigo-400 mb-4">
           Our Blogs
         </h1>
         <p className="text-gray-400 max-w-xl text-lg">
