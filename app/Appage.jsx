@@ -1,11 +1,22 @@
 "use client"
-import React from 'react'
+import React, { useState, useEffect } from "react";
 import Navpc from "../components/Navpc";
 import ProjectCard from "../components/ProjectCard";
 import Blogcard from "../components/Blogcard";
 import Totop from "../components/Totop";
 
 const Appage = () => {
+  const colors = ["blue", "violet", "yellow"];
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % colors.length);
+    }, 1000); // change every 1 second
+
+    return () => clearInterval(interval);
+  }, []);
+
      const blogs = [
        {
          image:
@@ -177,12 +188,17 @@ const Appage = () => {
 
         {/* Text content */}
         <div className="relative z-10 w-full lg:w-4/5 space-y-6">
-          <h3 className="text-4xl font-extrabold mb-4 text-transparent bg-clip-text bg-linear-to-r from-purple-400 to-green-400">
+          <h3
+            className="text-4xl font-extrabold mb-4 text-transparent bg-clip-text bg-linear-to-r from-purple-400 to-green-400"
+          >
             About Me
           </h3>
           <p className="text-gray-300 text-lg leading-relaxed max-w-3xl italic">
             I'm a passionate{" "}
-            <span className="text-indigo-400 font-medium">
+            <span
+              style={{ color: colors[index] }}
+              className="text-indigo-400 font-medium"
+            >
               Front-End Developer
             </span>{" "}
             who loves building clean, responsive, and scalable web applications.
